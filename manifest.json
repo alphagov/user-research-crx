@@ -1,0 +1,20 @@
+{
+  "name": "Social media links for testing",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Adds social media links to certain pages on GOV.UK - for user testing",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://private-frontend.preview.alphagov.co.uk/*",
+        "https://calculators.preview.alphagov.co.uk/*",
+        "https://www.preview.alphagov.co.uk/*",
+        "https://preview.alphagov.co.uk/*",
+        "https://www.gov.uk/*",
+        "https://gov.uk/*"
+        ],
+      "css": ["social.css"],
+      "js": ["jquery.js", "social.js"]
+    }
+  ]
+}
